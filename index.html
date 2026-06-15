@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<title>AS Logistics | 11톤 윙바디 차주 모집</title>
+<title>AS Logistics | 11톤 윙바디 차주 모집 (쿠팡 간선운송)</title>
 
-<meta name="description" content="AS Logistics 쿠팡 간선운송 전문 기업. 11톤 윙바디 차주 모집, 안정적인 물량 제공">
-<meta name="keywords" content="AS Logistics, 에이에스로지스틱스, 쿠팡간선,쿠팡 물류, 간선운송, 11톤 윙바디, 화물운송, 화물차 지입, 차주 모집">
+<meta name="description" content="AS Logistics 11톤 윙바디 차주 모집. 쿠팡 간선운송 전문, 전국 물류센터 안정 배차, 운송기사 상시 모집">
+<meta name="keywords" content="11톤 윙바디, 화물차 모집, 쿠팡 간선, 지입차, 운송기사, 물류기사 모집">
+<meta name="robots" content="index,follow">
 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+<meta property="og:title" content="AS Logistics 11톤 윙바디 차주 모집">
+<meta property="og:description" content="쿠팡 간선운송 전문 / 전국 노선 안정 배차 / 차주 모집">
+<meta property="og:type" content="website">
+
+<meta name="author" content="AS Logistics">
+
+<!-- 구조화 데이터 (네이버/구글 공통 SEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AS Logistics",
+  "url": "https://your-domain.com",
+  "telephone": "032-813-3715",
+  "description": "쿠팡 간선운송 전문 물류기업"
+}
+</script>
 
 <style>
-body{margin:0;font-family:'Noto Sans KR',sans-serif;color:#222;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{color:#111;background:#fff;}
 
-/* HERO */
+/* 헤더 */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#fff;
+position:sticky;
+top:0;
+z-index:10;
+border-bottom:1px solid #eee;
+}
+
+.logo{display:flex;align-items:center;gap:10px;font-weight:bold;}
+.logo img{width:40px;height:40px;}
+
+nav a{margin:0 10px;text-decoration:none;color:#333;font-size:14px;}
+
+.call{
+background:#ff6a00;color:#fff;padding:10px 15px;
+border-radius:30px;text-decoration:none;font-weight:bold;
+}
+
+/* 히어로 */
 .hero{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+height:90vh;
+background:
+linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
 url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1600&q=80');
 background-size:cover;
 background-position:center;
@@ -30,223 +72,127 @@ color:#fff;
 padding:20px;
 }
 
-.hero h1{font-size:52px;margin:10px 0;}
-.hero h2{color:#ffb400;}
+.hero h1{font-size:48px;margin-bottom:10px;}
+.hero p{font-size:18px;margin-bottom:10px;}
 
-.btn{
-background:#ff6b00;
-color:#fff;
-padding:15px 30px;
+.btn-group a{
+margin:5px;
+padding:12px 20px;
 border-radius:30px;
 text-decoration:none;
 font-weight:bold;
 display:inline-block;
-margin-top:15px;
 }
 
-/* SECTIONS */
-section{
-padding:80px 20px;
-max-width:1100px;
-margin:auto;
-}
+.btn-orange{background:#ff6a00;color:#fff;}
+.btn-yellow{background:#ffd400;color:#111;}
 
-.title{
-text-align:center;
-font-size:32px;
-margin-bottom:40px;
-color:#0b2341;
-font-weight:900;
-}
+/* 섹션 */
+.section{padding:60px 20px;max-width:1100px;margin:auto;}
 
-/* GRID */
-.grid{
+.cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(4,1fr);
 gap:20px;
+margin-top:20px;
 }
 
 .card{
-background:#f7f7f7;
-padding:25px;
-border-radius:12px;
-text-align:center;
-box-shadow:0 6px 20px rgba(0,0,0,0.05);
+padding:20px;border:1px solid #eee;border-radius:10px;text-align:center;
 }
 
-/* CONTACT */
-.contact{
-background:#f4f4f4;
-text-align:center;
-}
-
-.phone{
-font-size:30px;
-color:#ff6b00;
-font-weight:900;
-margin:10px 0;
-}
-
-/* LEAD FORM */
-.lead{
-background:#fff;
-text-align:center;
-padding:80px 20px;
-}
-
-.lead form{
-max-width:400px;
-margin:auto;
+/* CTA 고정 */
+.fixed-cta{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
 display:flex;
-flex-direction:column;
-gap:10px;
 }
 
-.lead input{
-padding:12px;
-border:1px solid #ddd;
-border-radius:8px;
-}
-
-.lead button{
-background:#ff6b00;
-color:#fff;
-padding:12px;
-border:none;
-border-radius:8px;
-font-weight:bold;
-cursor:pointer;
-}
-
-/* FLOAT BUTTONS */
-.call{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#ff6b00;
-color:#fff;
-padding:15px 18px;
-border-radius:50px;
+.fixed-cta a{
+flex:1;
+padding:15px;
+text-align:center;
 text-decoration:none;
 font-weight:bold;
-box-shadow:0 6px 20px rgba(0,0,0,0.2);
 }
 
-.kakao{
-position:fixed;
-bottom:80px;
-right:20px;
-background:#FEE500;
-color:#000;
-padding:15px 18px;
-border-radius:50px;
-font-weight:900;
-text-decoration:none;
-box-shadow:0 6px 20px rgba(0,0,0,0.2);
+.fixed-cta a:first-child{background:#ff6a00;color:#fff;}
+.fixed-cta a:last-child{background:#ffd400;color:#111;}
+
+footer{
+background:#111;color:#fff;text-align:center;padding:30px;margin-top:40px;
 }
 
-/* MOBILE */
 @media(max-width:768px){
-.hero h1{font-size:34px;}
-.title{font-size:26px;}
+.hero h1{font-size:28px;}
+.cards{grid-template-columns:1fr;}
+header{flex-direction:column;gap:10px;}
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
+<header>
+  <div class="logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/1995/1995471.png"/>
+    <span>AS Logistics</span>
+  </div>
+
+  <nav>
+    <a href="#info">모집안내</a>
+    <a href="#company">회사소개</a>
+    <a href="#contact">문의</a>
+  </nav>
+
+  <a class="call" href="tel:0328133715">📞 전화문의</a>
+</header>
+
 <section class="hero">
-<h2>쿠팡 간선운송 전문기업</h2>
-<h1>11톤 윙바디 차주 모집</h1>
-<p>안정적인 물량 + 전국 노선 운영</p>
+  <h1>11톤 윙바디 차주 모집</h1>
+  <p>쿠팡 간선운송 / 전국 물류센터 / 안정적 배차</p>
 
-<a href="tel:0328133715" class="btn">지금 전화 문의</a>
+  <div class="btn-group">
+    <a class="btn-orange" href="tel:0328133715">전화 문의</a>
+    <a class="btn-yellow" href="https://open.kakao.com/o/xxxxxxx" target="_blank">카카오 상담</a>
+  </div>
 </section>
 
-<!-- 회사소개 -->
-<section>
-<h2 class="title">회사소개</h2>
-<p style="text-align:center;max-width:800px;margin:auto;line-height:1.7;">
-(주)에이에스로지스틱스는 쿠팡 간선 및 물류 운송 전문 기업입니다.
-전국 물류 네트워크 기반으로 안정적인 운행 노선을 제공합니다.
-</p>
+<section class="section" id="company">
+  <h2>AS Logistics 소개</h2>
+  <p>
+    AS Logistics는 쿠팡 간선운송 전문 물류기업으로,
+    11톤 윙바디 차량을 보유한 차주를 상시 모집하고 있습니다.
+    전국 물류센터 기반 안정적인 물량과 지속적인 배차를 제공합니다.
+  </p>
 </section>
 
-<!-- 모집 -->
-<section>
-<h2 class="title">모집 안내</h2>
+<section class="section" id="info">
+  <h2>모집 안내</h2>
 
-<div class="grid">
-<div class="card"><h3>차량</h3><p>11톤 윙바디</p></div>
-<div class="card"><h3>업무</h3><p>간선 및 물류 운송</p></div>
-<div class="card"><h3>지역</h3><p>전국 물류센터</p></div>
-<div class="card"><h3>조건</h3><p>화물운송 자격증</p></div>
-</div>
+  <div class="cards">
+    <div class="card">🚛 11톤 윙바디</div>
+    <div class="card">📦 쿠팡 간선운송</div>
+    <div class="card">📍 전국 운행</div>
+    <div class="card">💰 운송자격 필수</div>
+  </div>
 </section>
 
-<!-- 강점 -->
-<section style="background:#0b2341;color:#fff;">
-<h2 class="title" style="color:#fff;">AS LOGISTICS 경쟁력</h2>
-
-<div class="grid">
-<div class="card"><h3>안정 물량</h3><p>지속 운행 노선 제공</p></div>
-<div class="card"><h3>배차 시스템</h3><p>전문 배차 관리</p></div>
-<div class="card"><h3>전국 네트워크</h3><p>물류센터 연계</p></div>
-<div class="card"><h3>수익 구조</h3><p>운행 기반 수익</p></div>
-</div>
+<section class="section" id="contact">
+  <h2>지금 바로 상담</h2>
+  <p>조건 및 배차 안내는 전화 또는 카카오 상담으로 가능합니다.</p>
 </section>
 
-<!-- 리드 폼 -->
-<section class="lead">
-<h2 class="title">빠른 상담 신청</h2>
-
-<form onsubmit="sendLead(event)">
-<input type="text" id="name" placeholder="이름" required>
-<input type="tel" id="phone" placeholder="연락처" required>
-<button type="submit">상담 요청</button>
-</form>
-
-<p id="result"></p>
-</section>
-
-<!-- 연락 -->
-<section class="contact">
-<h2 class="title">문의</h2>
-
-<div class="phone">032-813-3715</div>
-
-<p>FAX : 032-813-3716</p>
-<p>E-mail : dudwo3711@naver.com</p>
-<p>인천광역시 연수구 선학동</p>
-
-<a href="tel:0328133715" class="btn">전화 바로 연결</a>
-</section>
-
-<!-- FOOTER -->
-<footer style="background:#111;color:#fff;text-align:center;padding:25px;font-size:13px;">
-(주)에이에스로지스틱스 | 대표 김영재<br>
-Copyright © AS Logistics
+<footer>
+  AS Logistics © All Rights Reserved.
 </footer>
 
-<!-- FLOAT BUTTONS -->
-<a href="tel:0328133715" class="call">📞 전화</a>
-<a href="https://pf.kakao.com/_YOUR_ID" target="_blank" class="kakao">💬 카카오</a>
-
-<!-- SCRIPT -->
-<script>
-function sendLead(e){
-e.preventDefault();
-
-const name = document.getElementById("name").value;
-const phone = document.getElementById("phone").value;
-
-document.getElementById("result").innerText =
-"상담 신청 완료! 빠르게 연락드리겠습니다.";
-
-console.log({name, phone});
-}
-</script>
+<div class="fixed-cta">
+  <a href="tel:0328133715">📞 전화하기</a>
+  <a href="https://open.kakao.com/o/xxxxxxx" target="_blank">💬 카카오 상담</a>
+</div>
 
 </body>
 </html>
