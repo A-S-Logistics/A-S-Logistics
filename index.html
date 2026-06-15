@@ -1,10 +1,11 @@
+<!DOCTYPE html>
+
 logo_path = Path("/mnt/data/에이에스로지스틱스 3(2).png")
 truck_path = Path("/mnt/data/image(4).png")
 
 logo_src = "data:image/png;base64," + base64.b64encode(logo_path.read_bytes()).decode("utf-8")
 truck_src = "data:image/png;base64," + base64.b64encode(truck_path.read_bytes()).decode("utf-8")
 
-html = f"""<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
