@@ -1,173 +1,54 @@
 <!DOCTYPE html>
-
-logo_path = Path("/mnt/data/에이에스로지스틱스 3(2).png")
-truck_path = Path("/mnt/data/image(4).png")
-
-logo_src = "data:image/png;base64," + base64.b64encode(logo_path.read_bytes()).decode("utf-8")
-truck_src = "data:image/png;base64," + base64.b64encode(truck_path.read_bytes()).decode("utf-8")
-
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>AS Logistics | 쿠팡 간선운송 전문기업</title>
-
-<meta name="keywords"
-content="AS Logistics, 에이에스로지스틱스, 쿠팡간선, 간선운송, 11톤윙바디, 화물운송, 차주모집">
-
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
-
 <style>
-body{
-margin:0;
-font-family:'Noto Sans KR',sans-serif;
-color:#222;
-}
-
-header{
-position:fixed;
-top:0;
-width:100%;
-background:#0b2341;
-padding:15px 20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-z-index:1000;
-}
-
-header img{
-height:50px;
-}
-
-header a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-font-weight:500;
-}
-
-.hero{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1600&q=80');
-background-size:cover;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-.hero h1{
-font-size:55px;
-margin-bottom:10px;
-}
-
-.hero h2{
-color:#ffb400;
-}
-
-.btn{
-background:#ff6b00;
-padding:15px 35px;
-border-radius:30px;
-color:white;
-text-decoration:none;
-margin-top:20px;
-display:inline-block;
-font-weight:bold;
-}
-
-section{
-padding:80px 20px;
-max-width:1100px;
-margin:auto;
-}
-
-.title{
-text-align:center;
-font-size:36px;
-margin-bottom:40px;
-color:#0b2341;
-font-weight:900;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:#f7f7f7;
-padding:25px;
-border-radius:12px;
-text-align:center;
-}
-
-.highlight{
-background:#0b2341;
-color:white;
-padding:80px 20px;
-}
-
-.contact{
-background:#f4f4f4;
-text-align:center;
-}
-
-.phone{
-font-size:32px;
-color:#ff6b00;
-font-weight:900;
-margin:15px 0;
-}
-
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:30px;
-font-size:14px;
-}
-
-.call{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#ff6b00;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
+body{margin:0;font-family:'Noto Sans KR',sans-serif;color:#222;}
+header{position:fixed;top:0;left:0;width:100%;background:#0b2341;padding:15px 25px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;box-sizing:border-box;z-index:1000;}
+header a{color:#fff;margin-left:20px;text-decoration:none;font-weight:500;white-space:nowrap;}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;text-align:center;padding:20px;}
+.hero h1{font-size:55px;margin-bottom:10px;}
+.hero h2{color:#ffb400;}
+.btn{background:#ff6b00;padding:15px 35px;border-radius:30px;color:#fff;text-decoration:none;margin-top:20px;display:inline-block;font-weight:bold;}
+section{padding:80px 20px;max-width:1100px;margin:auto;}
+.title{text-align:center;font-size:36px;margin-bottom:40px;color:#0b2341;font-weight:900;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.card{background:#f7f7f7;padding:25px;border-radius:12px;text-align:center;}
+.highlight{background:#0b2341;color:#fff;padding:80px 20px;}
+.contact{background:#f4f4f4;text-align:center;}
+.phone{font-size:32px;color:#ff6b00;font-weight:900;margin:15px 0;}
+footer{background:#111;color:#fff;text-align:center;padding:30px;font-size:14px;}
+.call{position:fixed;bottom:20px;right:20px;background:#ff6b00;color:#fff;padding:15px 20px;border-radius:50px;text-decoration:none;font-weight:bold;}
+@media(max-width:768px){
+header{flex-direction:column;padding:12px;}
+header div{margin-top:10px;}
+header a{font-size:14px;margin:0 8px;}
+.hero h1{font-size:38px;}
+.hero h2{font-size:22px;}
+.title{font-size:28px;}
+.phone{font-size:26px;}
 }
 </style>
 </head>
-
 <body>
-
 <header>
-<img src="logo.png" alt="AS Logistics">
+<h2 style="color:white;margin:0;font-size:28px;">AS LOGISTICS</h2>
 <div>
 <a href="#about">회사소개</a>
 <a href="#service">모집안내</a>
-<a href="#contact">문의</a>
+<a href="#contact">문의하기</a>
 </div>
 </header>
 
 <section class="hero">
 <h2>쿠팡 간선운송 전문기업</h2>
 <h1>AS LOGISTICS</h1>
-
 <p>안정적인 물량 제공</p>
 <p>11톤 윙바디 차주 모집</p>
-<p><b>월 매출 1,500만 원 수준 가능</b></p>
-
+<p><b>월 매출 1,500만원 수준 가능 (운행조건에 따라 상이)</b></p>
 <a href="#contact" class="btn">배차 문의하기</a>
 </section>
 
@@ -175,87 +56,49 @@ font-weight:bold;
 <h2 class="title">회사소개</h2>
 <p style="text-align:center; max-width:800px; margin:auto;">
 (주)에이에스로지스틱스는 쿠팡 간선 및 택배 물류를 전문으로 운영하는 기업입니다.
-안정적인 물량과 전국 네트워크를 기반으로 차주분들과 함께 성장하고 있습니다.
+안정적인 물량 공급과 전국 물류 네트워크를 기반으로 차주분들과 함께 성장하고 있습니다.
 </p>
 </section>
 
 <section id="service">
 <h2 class="title">11톤 윙바디 차주 모집</h2>
-
 <div class="grid">
-
-<div class="card">
-<h3>모집차량</h3>
-<p>11톤 윙바디</p>
-</div>
-
-<div class="card">
-<h3>운행업무</h3>
-<p>쿠팡 간선 및 택배</p>
-</div>
-
-<div class="card">
-<h3>운행지역</h3>
-<p>전국 물류센터</p>
-</div>
-
-<div class="card">
-<h3>지원조건</h3>
-<p>화물운송 자격증</p>
-</div>
-
+<div class="card"><h3>모집차량</h3><p>11톤 윙바디</p></div>
+<div class="card"><h3>운행업무</h3><p>쿠팡 간선 및 택배 운송</p></div>
+<div class="card"><h3>운행지역</h3><p>전국 쿠팡 물류센터</p></div>
+<div class="card"><h3>지원조건</h3><p>화물운송 자격증 소지자</p></div>
 </div>
 </section>
 
 <section class="highlight">
 <h2 class="title" style="color:white;">AS LOGISTICS 경쟁력</h2>
-
 <div class="grid">
-
-<div class="card" style="background:rgba(255,255,255,0.1);color:white;">
-<h3>안정적인 물량</h3>
-<p>지속적인 운송 물량 제공</p>
-</div>
-
-<div class="card" style="background:rgba(255,255,255,0.1);color:white;">
-<h3>월 1,500만 원 수준</h3>
-<p>운행 조건에 따라 안정적인 매출</p>
-</div>
-
-<div class="card" style="background:rgba(255,255,255,0.1);color:white;">
-<h3>전문 배차팀</h3>
-<p>체계적인 운행 관리</p>
-</div>
-
-<div class="card" style="background:rgba(255,255,255,0.1);color:white;">
-<h3>전국 네트워크</h3>
-<p>쿠팡 물류센터 연계</p>
-</div>
-
+<div class="card" style="background:rgba(255,255,255,0.1);color:white;"><h3>안정적인 물량</h3><p>지속적인 운송 물량 제공</p></div>
+<div class="card" style="background:rgba(255,255,255,0.1);color:white;"><h3>월 1,500만원 수준</h3><p>운행 조건에 따른 안정적 매출</p></div>
+<div class="card" style="background:rgba(255,255,255,0.1);color:white;"><h3>전문 배차팀</h3><p>체계적인 배차 및 운행관리</p></div>
+<div class="card" style="background:rgba(255,255,255,0.1);color:white;"><h3>전국 네트워크</h3><p>전국 물류센터 연계 운행</p></div>
 </div>
 </section>
 
 <section id="contact" class="contact">
 <h2 class="title">문의하기</h2>
-
 <p>대표전화</p>
 <div class="phone">032-813-3715</div>
-
 <p>FAX : 032-813-3716</p>
 <p>E-mail : dudwo3711@naver.com</p>
 <p>인천광역시 연수구 선학동 369-15, 202호</p>
-
 <a href="tel:0328133715" class="btn">전화 바로걸기</a>
 </section>
 
 <footer>
 (주)에이에스로지스틱스 | 대표 김영재<br>
-TEL 032-813-3715 | FAX 032-813-3716<br>
+사업자등록번호 : 305-88-03803<br>
+TEL : 032-813-3715 | FAX : 032-813-3716<br>
+E-mail : dudwo3711@naver.com<br>
 인천광역시 연수구 선학동 369-15, 202호<br><br>
-Copyright © AS Logistics
+Copyright © AS Logistics. All Rights Reserved.
 </footer>
 
 <a href="tel:0328133715" class="call">📞 전화문의</a>
-
 </body>
 </html>
