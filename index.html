@@ -4,74 +4,47 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AS Logistics | 쿠팡 간선운송 전문기업</title>
+<title>AS Logistics | 11톤 윙바디 차주 모집</title>
+
+<meta name="description" content="AS Logistics 쿠팡 간선운송 전문 기업. 11톤 윙바디 차주 모집, 안정적인 물량 제공">
+<meta name="keywords" content="AS Logistics, 에이에스로지스틱스, 쿠팡간선,쿠팡 물류, 간선운송, 11톤 윙바디, 화물운송, 화물차 지입, 차주 모집">
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
 
 <style>
-body{
-margin:0;
-font-family:'Noto Sans KR',sans-serif;
-color:#222;
-}
+body{margin:0;font-family:'Noto Sans KR',sans-serif;color:#222;}
 
-header{
-position:fixed;
-top:0;
-width:100%;
-background:#0b2341;
-padding:15px 20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-z-index:1000;
-}
-
-header img{
-height:50px;
-}
-
-header a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-font-weight:500;
-}
-
+/* HERO */
 .hero{
 height:100vh;
-background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
 url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1600&q=80');
 background-size:cover;
+background-position:center;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-color:white;
 text-align:center;
+color:#fff;
 padding:20px;
 }
 
-.hero h1{
-font-size:55px;
-margin-bottom:10px;
-}
-
-.hero h2{
-color:#ffb400;
-}
+.hero h1{font-size:52px;margin:10px 0;}
+.hero h2{color:#ffb400;}
 
 .btn{
 background:#ff6b00;
-padding:15px 35px;
+color:#fff;
+padding:15px 30px;
 border-radius:30px;
-color:white;
 text-decoration:none;
-margin-top:20px;
-display:inline-block;
 font-weight:bold;
+display:inline-block;
+margin-top:15px;
 }
 
+/* SECTIONS */
 section{
 padding:80px 20px;
 max-width:1100px;
@@ -80,12 +53,13 @@ margin:auto;
 
 .title{
 text-align:center;
-font-size:36px;
+font-size:32px;
 margin-bottom:40px;
 color:#0b2341;
 font-weight:900;
 }
 
+/* GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -97,155 +71,182 @@ background:#f7f7f7;
 padding:25px;
 border-radius:12px;
 text-align:center;
+box-shadow:0 6px 20px rgba(0,0,0,0.05);
 }
 
-.highlight{
-background:#0b2341;
-color:white;
-padding:80px 20px;
-}
-
+/* CONTACT */
 .contact{
 background:#f4f4f4;
 text-align:center;
 }
 
 .phone{
-font-size:32px;
+font-size:30px;
 color:#ff6b00;
 font-weight:900;
-margin:15px 0;
+margin:10px 0;
 }
 
-footer{
-background:#111;
-color:white;
+/* LEAD FORM */
+.lead{
+background:#fff;
 text-align:center;
-padding:30px;
-font-size:14px;
+padding:80px 20px;
 }
 
+.lead form{
+max-width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.lead input{
+padding:12px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+.lead button{
+background:#ff6b00;
+color:#fff;
+padding:12px;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* FLOAT BUTTONS */
 .call{
 position:fixed;
 bottom:20px;
 right:20px;
 background:#ff6b00;
-color:white;
-padding:15px 20px;
+color:#fff;
+padding:15px 18px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
+box-shadow:0 6px 20px rgba(0,0,0,0.2);
+}
+
+.kakao{
+position:fixed;
+bottom:80px;
+right:20px;
+background:#FEE500;
+color:#000;
+padding:15px 18px;
+border-radius:50px;
+font-weight:900;
+text-decoration:none;
+box-shadow:0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.hero h1{font-size:34px;}
+.title{font-size:26px;}
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<img src="logo.png" alt="AS Logistics">
-<div>
-<a href="#about">회사소개</a>
-<a href="#service">모집안내</a>
-<a href="#contact">문의</a>
-</div>
-</header>
-
+<!-- HERO -->
 <section class="hero">
 <h2>쿠팡 간선운송 전문기업</h2>
-<h1>AS LOGISTICS</h1>
+<h1>11톤 윙바디 차주 모집</h1>
+<p>안정적인 물량 + 전국 노선 운영</p>
 
-<p>안정적인 물량 제공</p>
-<p>11톤 윙바디 차주 모집</p>
-<p><b>월 매출 1,500만 원 수준 가능</b></p>
-
-<a href="#contact" class="btn">배차 문의하기</a>
+<a href="tel:0328133715" class="btn">지금 전화 문의</a>
 </section>
 
-<section id="about">
+<!-- 회사소개 -->
+<section>
 <h2 class="title">회사소개</h2>
-<p style="text-align:center; max-width:800px; margin:auto;">
-(주)에이에스로지스틱스는 쿠팡 간선 및 택배 물류를 전문으로 운영하는 기업입니다.
-안정적인 물량과 전국 네트워크를 기반으로 차주분들과 함께 성장하고 있습니다.
+<p style="text-align:center;max-width:800px;margin:auto;line-height:1.7;">
+(주)에이에스로지스틱스는 쿠팡 간선 및 물류 운송 전문 기업입니다.
+전국 물류 네트워크 기반으로 안정적인 운행 노선을 제공합니다.
 </p>
 </section>
 
-<section id="service">
-<h2 class="title">11톤 윙바디 차주 모집</h2>
+<!-- 모집 -->
+<section>
+<h2 class="title">모집 안내</h2>
 
 <div class="grid">
-
-<div class="card">
-<h3>모집차량</h3>
-<p>11톤 윙바디</p>
-</div>
-
-<div class="card">
-<h3>운행업무</h3>
-<p>쿠팡 간선 및 택배</p>
-</div>
-
-<div class="card">
-<h3>운행지역</h3>
-<p>전국 물류센터</p>
-</div>
-
-<div class="card">
-<h3>지원조건</h3>
-<p>화물운송 자격증</p>
-</div>
-
+<div class="card"><h3>차량</h3><p>11톤 윙바디</p></div>
+<div class="card"><h3>업무</h3><p>간선 및 물류 운송</p></div>
+<div class="card"><h3>지역</h3><p>전국 물류센터</p></div>
+<div class="card"><h3>조건</h3><p>화물운송 자격증</p></div>
 </div>
 </section>
 
-<section class="highlight">
-<h2 class="title" style="color:white;">AS LOGISTICS 경쟁력</h2>
+<!-- 강점 -->
+<section style="background:#0b2341;color:#fff;">
+<h2 class="title" style="color:#fff;">AS LOGISTICS 경쟁력</h2>
 
 <div class="grid">
-
-<div class="card" style="background:rgba(255,255,255,0.1);color:white;">
-<h3>안정적인 물량</h3>
-<p>지속적인 운송 물량 제공</p>
-</div>
-
-<div class="card" style="background:rgba(255,255,255,0.1);color:white;">
-<h3>월 1,500만 원 수준</h3>
-<p>운행 조건에 따라 안정적인 매출</p>
-</div>
-
-<div class="card" style="background:rgba(255,255,255,0.1);color:white;">
-<h3>전문 배차팀</h3>
-<p>체계적인 운행 관리</p>
-</div>
-
-<div class="card" style="background:rgba(255,255,255,0.1);color:white;">
-<h3>전국 네트워크</h3>
-<p>쿠팡 물류센터 연계</p>
-</div>
-
+<div class="card"><h3>안정 물량</h3><p>지속 운행 노선 제공</p></div>
+<div class="card"><h3>배차 시스템</h3><p>전문 배차 관리</p></div>
+<div class="card"><h3>전국 네트워크</h3><p>물류센터 연계</p></div>
+<div class="card"><h3>수익 구조</h3><p>운행 기반 수익</p></div>
 </div>
 </section>
 
-<section id="contact" class="contact">
-<h2 class="title">문의하기</h2>
+<!-- 리드 폼 -->
+<section class="lead">
+<h2 class="title">빠른 상담 신청</h2>
 
-<p>대표전화</p>
+<form onsubmit="sendLead(event)">
+<input type="text" id="name" placeholder="이름" required>
+<input type="tel" id="phone" placeholder="연락처" required>
+<button type="submit">상담 요청</button>
+</form>
+
+<p id="result"></p>
+</section>
+
+<!-- 연락 -->
+<section class="contact">
+<h2 class="title">문의</h2>
+
 <div class="phone">032-813-3715</div>
 
 <p>FAX : 032-813-3716</p>
 <p>E-mail : dudwo3711@naver.com</p>
-<p>인천광역시 연수구 선학동 369-15, 202호</p>
+<p>인천광역시 연수구 선학동</p>
 
-<a href="tel:0328133715" class="btn">전화 바로걸기</a>
+<a href="tel:0328133715" class="btn">전화 바로 연결</a>
 </section>
 
-<footer>
+<!-- FOOTER -->
+<footer style="background:#111;color:#fff;text-align:center;padding:25px;font-size:13px;">
 (주)에이에스로지스틱스 | 대표 김영재<br>
-TEL 032-813-3715 | FAX 032-813-3716<br>
-인천광역시 연수구 선학동 369-15, 202호<br><br>
 Copyright © AS Logistics
 </footer>
 
-<a href="tel:0328133715" class="call">📞 전화문의</a>
+<!-- FLOAT BUTTONS -->
+<a href="tel:0328133715" class="call">📞 전화</a>
+<a href="https://pf.kakao.com/_YOUR_ID" target="_blank" class="kakao">💬 카카오</a>
+
+<!-- SCRIPT -->
+<script>
+function sendLead(e){
+e.preventDefault();
+
+const name = document.getElementById("name").value;
+const phone = document.getElementById("phone").value;
+
+document.getElementById("result").innerText =
+"상담 신청 완료! 빠르게 연락드리겠습니다.";
+
+console.log({name, phone});
+}
+</script>
 
 </body>
 </html>
